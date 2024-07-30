@@ -12,33 +12,22 @@ This repository contains Python and R scripts that will be used to facilitate th
      - If the salary is greater than $7,500 and less than $30,000 and the employee is female, it sets the employee level as "A5-F."
  * Includes exception handling to address potential errors during payment slip generation.
 
-## Code Explanation
-## Creating the Workers List
-The Python script uses a *for loop* to generate a list of 400 workers while the R script uses the *data.frame* function to create a data frame containing 400 workers. Each worker has:
+## Generating the Workers List
+For Python, I have created a list of 400 workers with each worker being represented as a dictionary with id, salary, and gender. 
+The salary is a random integer between $5000 and $30000.
+The gender is randomly chosen to be either 'Male' or 'Female'.
 
-A randomly assigned salary between $5000 and $35000.
-A randomly assigned gender ('Male' or 'Female').
+For R, I used a for loop to create a list of 400 workers with each worker being represented as a list with id, salary, and gender.
+The salary is a random integer between $5000 and $30000 using the *sample function*.
+The gender is randomly chosen to be either 'Male' or 'Female' using the *sample function*.
 
 ## Generating Payment Slips
-The generate_payment_slips function:
+I used the for loop to iterate through each worker in the list, and also extracted the employee_id, salary, and gender from each worker.
+An employee_level was assigned based on the given conditions of salary range and gender. After ensuring that every criteria has been put into consideration, I went ahead to generate and print a payment slip for each worker, showing the employee ID, salary, gender, and employee level.
 
-Takes the list of workers as an argument.
-Iterates through each worker using a for loop.
-Applies conditional statements to determine the employee level.
-Uses a *tryCatch* block to handle potential errors.
-Prints a payment slip for each worker, including their ID, salary, gender, and employee level.
-
-Generating Payment Slips
-The generate_payment_slips function:
-
-Takes the list of workers as an argument.
-Iterates through each worker using a for loop.
-Applies conditional statements to determine the employee level.
-Uses a try-except block to handle potential errors.
-Prints a payment slip for each worker, including their ID, salary, gender, and employee level.
-
-## Error Handling
+## Exception Handling
 If an error occurs while generating a payment slip, the program will print an error message indicating the employee ID and the error encountered.
+A *try-except* block has been used in the Python script, while a *tryCatch* block has been used in the R script to catch and print any errors that occur during the processing of each worker.
 
 ## Conclusion
 Both the Python and R programs are designed to handle the generation of worker payment slips at Highridge Construction Company, and conditions have been put in place to determine employee levels based on salary and gender. The programs include exception handling to manage any potential errors that may arise during execution.
