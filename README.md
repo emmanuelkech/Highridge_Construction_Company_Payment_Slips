@@ -22,7 +22,7 @@ The salary is a random integer between $5000 and $30000 using the *sample functi
 The gender is randomly chosen to be either 'Male' or 'Female' using the *sample function*.
 
 ## Generating Payment Slips
-I used the for loop to iterate through each worker in the list, and also extracted the employee_id, salary, and gender from each worker.
+I used a *for loop* to iterate through each worker in the list, and also extracted the employee_id, salary, and gender for each worker.
 An employee_level was assigned based on the given conditions of salary range and gender. After ensuring that every criteria has been put into consideration, I went ahead to generate and print a payment slip for each worker, showing the employee ID, salary, gender, and employee level.
 
 ## Exception Handling
