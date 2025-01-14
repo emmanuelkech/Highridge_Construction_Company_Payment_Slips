@@ -1,5 +1,4 @@
 # Highridge Construction Company Payment Slips
-*BAN6420 Module 1 Assignment*
 
 ## Overview
 This repository contains Python and R scripts that will be used to facilitate the weekly payments of workers at Highride Construction Company. Both scripts dynamically create a list of 400 workers and generate payment slips for each worker based on specific conditions. Exception handling has also been included to address potential errors.
